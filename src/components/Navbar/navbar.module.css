@@ -2,8 +2,16 @@
 	margin-right: 2em;
 }
 
-.navBlock {
+.navBlockTop {
     background-color: transparent!important;
+    padding-top: 10px;
+    height: 70px;
+    box-shadow: none!important;
+    border: none;
+}
+
+.navBlockBottom {
+    background-color: black!important;
     padding-top: 10px;
     height: 70px;
 }
