@@ -1,0 +1,13 @@
+.menuButton {
+	margin-right: 2em;
+}
+
+.navBlock {
+    background-color: transparent!important;
+    padding-top: 10px;
+    height: 70px;
+}
+
+.navToolBar button{
+    margin-left: 40px;
+}

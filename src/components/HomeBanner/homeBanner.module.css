@@ -1,0 +1,56 @@
+.bannerImg {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.bannerImgDiv {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+@keyframes typewriter {
+	0%,10% {
+		width: 0;
+	}
+	90%,100% {
+		width: 12.5ch;
+	}
+}
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: white;
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+.line1{
+    position: relative;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bannerTextDiv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid white;
+	padding: 20px;
+	color: white;
+}
+
+.bannerTextDiv h1 {
+    width: 0px;
+    position: relative;
+    animation: typewriter 4s steps(20) 1s infinite alternate,
+             blinkTextCursor 500ms steps(20) infinite normal;
+}
