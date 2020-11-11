@@ -6,7 +6,7 @@
 }
 
 .expRow {
-    padding: 10px;
+    padding: 20px;
 }
 
 .expContent {
@@ -15,12 +15,15 @@
     width: 100%;
 }
 
-
-.expContent p:nth-of-type(1) {
-    color: #999999;
+.expContent p, .expContent h3 {
+    margin: 0px;
 }
 
 .expContent p:nth-of-type(2) {
+    color: #999999;
+}
+
+.expContent p:nth-of-type(1) {
     position: absolute;
     top: 5px;
     right: 5px;

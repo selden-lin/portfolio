@@ -19,8 +19,9 @@ export default function Experience() {
                     <div className={styles.expRow}>
                         <div className={styles.expContent}>
                             <h3>Slalom Build</h3>
-                            <p>Software engineer intern</p>
                             <p>June 2020 - August 2020</p>
+                            <p>Software engineer intern</p>
+                            <p>Toronto, Ontario</p>
                             <ul>
                                 <li>Implemented modules for internal website such as search using PHP, JavaScript and Drupal</li>
                                 <li>Implemented accessibility features using Angular for employee hackathon website</li>
