@@ -2,8 +2,7 @@ import React from 'react';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
 import styles from './navbar.module.css'
@@ -20,25 +19,31 @@ export default class Navbar extends React.Component {
         window.addEventListener('scroll', this.navScroll)
     }
 
-    navScroll (e) {
-        if(window.scrollY > window.innerHeight-70) {
-            this.setState({navBlockStyle: styles.navBlockBottom})
+    navScroll(e) {
+        if (window.scrollY > window.innerHeight - 70) {
+            this.setState({ navBlockStyle: styles.navBlockBottom })
         } else {
-            this.setState({navBlockStyle: styles.navBlockTop})
+            this.setState({ navBlockStyle: styles.navBlockTop })
         }
     }
-    
-    render () {
+
+    render() {
         return (
             <AppBar className={this.state.navBlockStyle} position="fixed">
                 <Toolbar className={styles.navToolBar} variant="dense">
-                    <Button color="inherit">Intro</Button>
-                    <Button color="inherit">Experience</Button>
-                    <Button color="inherit">Projects</Button>
+                    <a href="#intro" >
+                        <Button color="inherit">Intro</Button>
+                    </a>
+                    <a href="#experience" >
+                        <Button color="inherit">Experience</Button>
+                    </a>
+                    <a href="#projects" >
+                        <Button color="inherit">Projects</Button>
+                    </a>
                     <Button color="inherit">Resume</Button>
                 </Toolbar>
             </AppBar>
         );
     }
-    
+
 }

@@ -1,7 +1,17 @@
 import React from 'react';
 
+import Grid from '@material-ui/core/Grid';
+
+import styles from './projects.module.css';
+
 export default function Projects() {
     return (
-        <div>Projects</div>
+        <Grid id='projects' container className={styles.grid}>
+            <Grid item xs={4}/>
+            <Grid item xs={4} style={{textAlign: 'center'}}>
+                <h1>PROJECTS</h1>
+            </Grid>
+            <Grid item xs={4}/>
+        </Grid>
     )    
 } 

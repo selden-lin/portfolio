@@ -1,0 +1,13 @@
+.grid {
+    min-height: 100vh;
+    padding: 100px;
+    font-family: 'Nunito Sans';
+    background-color: #f2f2f2;
+}
+
+
+.grid h1 {
+    letter-spacing: 4px;
+    font-size: 36pt; 
+    border-bottom: 1px solid black;
+}

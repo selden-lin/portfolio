@@ -13,7 +13,7 @@ import styles from './intro.module.css'
 
 export default function Intro() {
     return (
-        <Grid container className={styles.gridContainer}>
+        <Grid id="intro" container className={styles.gridContainer}>
             <Grid item xs={6} style={{ backgroundColor: "#f2f2f2",position: 'relative' }}>
                 <Paper className={styles.paper} elevation={3}>
                     <h1>HELLO THERE</h1>

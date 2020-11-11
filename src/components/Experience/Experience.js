@@ -8,7 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 export default function Experience() {
     return (
-        <Grid container className={styles.experienceGrid}>
+        <Grid id="experience" container className={styles.experienceGrid}>
             <Grid item xs={4} />
             <Grid item xs={4} style={{ textAlign: 'center' }}>
                 <h1>EXPERIENCE</h1>

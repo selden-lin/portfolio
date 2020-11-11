@@ -19,3 +19,8 @@
 .navToolBar button{
     margin-left: 40px;
 }
+
+a:hover, a:visited, a:focus, a {
+    text-decoration: none;
+    color: white;
+}
