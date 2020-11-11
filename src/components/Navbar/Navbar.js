@@ -2,10 +2,10 @@ import React from 'react';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
 import styles from './navbar.module.css'
+import resume from '../../assets/resumeSeldenLin.pdf'
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -31,16 +31,18 @@ export default class Navbar extends React.Component {
         return (
             <AppBar className={this.state.navBlockStyle} position="fixed">
                 <Toolbar className={styles.navToolBar} variant="dense">
-                    <a href="#intro" >
+                    <a onClick={this.props.introScroll} >
                         <Button color="inherit">Intro</Button>
                     </a>
-                    <a href="#experience" >
+                    <a onClick={this.props.experienceScroll} >
                         <Button color="inherit">Experience</Button>
                     </a>
-                    <a href="#projects" >
+                    <a onClick={this.props.projectsScroll}>
                         <Button color="inherit">Projects</Button>
                     </a>
-                    <Button color="inherit">Resume</Button>
+                    <a href={resume} target="_blanks">
+                        <Button color="inherit">Resume</Button>
+                    </a>
                 </Toolbar>
             </AppBar>
         );
