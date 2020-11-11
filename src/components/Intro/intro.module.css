@@ -19,13 +19,13 @@
 }
 
 .linkedin {
-    background-color: #0077B5;
-    display: inline-block;
+    background-color: #0077B5!important;
+    display: inline-block!important;
 }
 
 .github {
-    background-color: black;
-    display: inline-block;
+    background-color: black!important;
+    display: inline-block!important;
 }
 
 .linkItem svg {

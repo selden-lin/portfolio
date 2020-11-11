@@ -30,7 +30,7 @@ export default function Intro() {
                                 <LinkedInIcon/>
                             </Avatar>
                         </a>
-                        <a href="https://github.com/selden-lin" target="_blank" className={styles.linkItem}> 
+                            <a href="https://github.com/selden-lin" target="_blank" className={styles.linkItem}> 
                             <Avatar className={styles.github}>
                                 <GitHubIcon/>
                             </Avatar>
