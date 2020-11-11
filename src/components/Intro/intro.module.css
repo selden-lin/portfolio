@@ -1,3 +1,36 @@
 .gridContainer {
     height: 100vh;
 }
+
+.paper {
+    margin: 0px 10px 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-family: 'Nunito Sans';
+}
+.paper h1 {
+    letter-spacing: 2px;
+}
+
+.linkItem {
+    margin: 10px;
+}
+
+.linkedin {
+    background-color: #0077B5;
+    display: inline-block;
+}
+
+.github {
+    background-color: black;
+    display: inline-block;
+}
+
+.linkItem svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
