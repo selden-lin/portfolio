@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "http://selden-lin.github.io/selden-lin.github.io"
+  "homepage": "http://selden-lin.github.io/selden-lin.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
