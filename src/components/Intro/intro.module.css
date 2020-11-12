@@ -4,8 +4,8 @@
 
 .profileImg {
     margin: 60px auto 30px auto;
-    height: 200px;
-    width: 200px;
+    height: 200px!important;
+    width: 200px!important;
 }
 
 .paper {

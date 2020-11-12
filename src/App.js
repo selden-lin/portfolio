@@ -11,9 +11,9 @@ function App() {
     const introRef = useRef(null);
     const projectsRef = useRef(null);
     const experienceRef = useRef(null);
-    const introScroll = () => introRef.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-    const experienceScroll = () => experienceRef.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-    const projectsScroll = () => projectsRef.current.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    const introScroll = () => introRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    const experienceScroll = () => experienceRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    const projectsScroll = () => projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 
     return (
         <div className="App">

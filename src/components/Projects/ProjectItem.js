@@ -8,9 +8,10 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Chip from '@material-ui/core/Chip';
 
-import modalImg from '../../assets/img/bg3.jpg';
 import styles from './projects.module.css';
+import CloudIcon from '@material-ui/icons/Cloud';
 
 const useStyles = makeStyles((theme) => ({
     modal: {
@@ -26,28 +27,67 @@ const useStyles = makeStyles((theme) => ({
     },
     media: {
         height: 140,
+    },
+    root: {
+        margin: '10px'
+    },
+    link: {
+        marginRight: '10px'
+    },
+    tag: {
+        margin: '0 5px 5px 0'
     }
 }));
 
 export default function ProjectItem(props) {
     const classes = useStyles();
 
-    return (
-        <div>
-            <Card className={classes.root}>
-                <CardMedia image={modalImg} className={classes.media}></CardMedia>
-                <CardContent>
-                    <h2>{props.title}</h2>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
-                    </Typography>
-                </CardContent>
-                <CardActions>
+    const makeLinks = (links) => {
+        if (links.length == 1) {
+            return (
+                <a className={classes.link} href={links[0]} target="_blank">
                     <Button size="small" variant="contained" color="primary">
                         <GitHubIcon className={styles.github} />Github</Button>
-                </CardActions>
-            </Card>
-        </div>
+                </a>
+
+            )
+        } else {
+            return (
+                <span>
+                    <a className={classes.link} href={links[0]} target="_blank">
+                        <Button size="small" variant="contained" color="primary">
+                            <GitHubIcon className={styles.github} />Github</Button>
+                    </a>
+                    <a className={classes.link} href={links[1]} target="_blank">
+                        <Button size="small" variant="contained" color="secondary">
+                            <CloudIcon className={styles.heroku} />Heroku</Button>
+                    </a>
+                </span>
+            )
+        }
+    }
+
+    const makeTags = props.data.tags.reduce((acc, item) => {
+        acc.push(
+            <Chip label={item} color="primary" variant="outline" className={classes.tag} onClick={()=>{}}/>
+        )
+        return acc;
+    }, []);
+
+    return (
+        <Card className={classes.root}>
+            <CardMedia image={props.data.img} className={classes.media}></CardMedia>
+            <CardContent>
+                <h2>{props.data.title}</h2>
+                {makeTags}
+                <Typography variant="body2" color="textSecondary" component="p">
+                    {props.data.description}
+                </Typography>
+                
+            </CardContent>
+            <CardActions>
+                {makeLinks(props.data.links)}
+            </CardActions>
+        </Card>
     );
 }

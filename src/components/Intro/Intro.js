@@ -8,7 +8,6 @@ import Avatar from '@material-ui/core/Avatar';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-import profileImg from "../../assets/img/profile.png"
 import styles from './intro.module.css'
 
 
@@ -20,7 +19,7 @@ export default class Intro extends React.Component {
                 <Grid item xs={12} md={6} style={{ backgroundColor: "#f2f2f2", position: 'relative' }}>
                     <div>
                         <Avatar className={styles.profileImg}>
-                            <img width='200px' src={profileImg}/>
+                            <img width='200px' src={'img/profile.png'}/>
                         </Avatar>
                     </div>
                     <Paper className={styles.paper} elevation={3}>

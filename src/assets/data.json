@@ -45,12 +45,40 @@
     ],
     "projects": [
         {
-            "img": "",
-            "description": "",
-            "title": "",
-            "tags": [],
+            "img": "img/brickBreakerGame.png",
+            "description": "An HTML Brickbreaker game built with createJs",
+            "title": "Brick Breaker",
+            "tags": ["HTML", "JavaScript"],
             "links": [
-                
+                "https://github.com/selden-lin/brick-breaker-game"
+            ]
+        },
+        {
+            "img": "img/websiteTemplate.png",
+            "description": "An editable peronal website template. Implemented authentication with PassportJs .There is an admin section in /admin with username 123 and password 123",
+            "title": "Personal Website",
+            "tags": ["HTML", "Bootstrap", "JavaScript", "PassportJS", "ExpressJs", "MongoDb"],
+            "links": [
+                "https://github.com/selden-lin/friendSite/tree/master",
+                "https://michael-lee-site.herokuapp.com/"
+            ]
+        },
+        {
+            "img": "img/reactBlogSite.png",
+            "description": "A simple CRUD blog site",
+            "title": "React Blog Site",
+            "tags": ["ReactJs", "ExpressJs", "MongoDb"],
+            "links": [
+                "https://github.com/selden-lin/react-blog-site"
+            ]
+        },
+        {
+            "img": "img/angularTaskApp.png",
+            "description": "Simple task app using Angular, Angular material-ui, Mongoose, ExpressJs that stores due dates and time spent for tasks",
+            "title": "Angular Task App",
+            "tags": ["Angular", "MongoDb", "Angular material-ui"],
+            "links": [
+                "https://github.com/selden-lin/angular-task-app"
             ]
         }
     ]
