@@ -10,7 +10,7 @@ import data from '../../assets/data.json';
 export default function Experience() {
     const makeList = (items) => {
         return items.reduce((acc, item, index) => {
-            acc.push(<li>{item}</li>)
+            acc.push(<li key={index}>{item}</li>)
             return acc;
         }, [])
     }

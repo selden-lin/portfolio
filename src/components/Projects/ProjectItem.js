@@ -67,9 +67,9 @@ export default function ProjectItem(props) {
         }
     }
 
-    const makeTags = props.data.tags.reduce((acc, item) => {
+    const makeTags = props.data.tags.reduce((acc, item,index) => {
         acc.push(
-            <Chip label={item} color="primary" variant="outline" className={classes.tag} onClick={()=>{}}/>
+            <Chip key={index} label={item} color="primary" variant="outlined" className={classes.tag} onClick={()=>{}}/>
         )
         return acc;
     }, []);
