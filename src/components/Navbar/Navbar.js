@@ -5,7 +5,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 
 import styles from './navbar.module.css'
-import resume from '../../assets/resumeSeldenLin.pdf'
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -40,7 +39,7 @@ export default class Navbar extends React.Component {
                     <a onClick={this.props.projectsScroll}>
                         <Button color="inherit">Projects</Button>
                     </a>
-                    <a href={resume} target="_blanks">
+                    <a href={'resumeSeldenLin.pdf'} target="_blanks">
                         <Button color="inherit">Resume</Button>
                     </a>
                 </Toolbar>
