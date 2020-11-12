@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.96064e36.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.96064e36.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.075c0788.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.075c0788.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.f568b9ae9ccf5f4e180708d35c348d6e.js": "/portfolio/precache-manifest.f568b9ae9ccf5f4e180708d35c348d6e.js",
-    "service-worker.js": "/portfolio/service-worker.js"
+    "main.css": "/selden-lin.github.io/static/css/main.8db1de50.chunk.css",
+    "main.js": "/selden-lin.github.io/static/js/main.c1424260.chunk.js",
+    "main.js.map": "/selden-lin.github.io/static/js/main.c1424260.chunk.js.map",
+    "runtime-main.js": "/selden-lin.github.io/static/js/runtime-main.9877043b.js",
+    "runtime-main.js.map": "/selden-lin.github.io/static/js/runtime-main.9877043b.js.map",
+    "static/js/2.be4d3c81.chunk.js": "/selden-lin.github.io/static/js/2.be4d3c81.chunk.js",
+    "static/js/2.be4d3c81.chunk.js.map": "/selden-lin.github.io/static/js/2.be4d3c81.chunk.js.map",
+    "static/js/3.515072b4.chunk.js": "/selden-lin.github.io/static/js/3.515072b4.chunk.js",
+    "static/js/3.515072b4.chunk.js.map": "/selden-lin.github.io/static/js/3.515072b4.chunk.js.map",
+    "index.html": "/selden-lin.github.io/index.html",
+    "static/css/main.8db1de50.chunk.css.map": "/selden-lin.github.io/static/css/main.8db1de50.chunk.css.map",
+    "static/js/2.be4d3c81.chunk.js.LICENSE.txt": "/selden-lin.github.io/static/js/2.be4d3c81.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.075c0788.js",
-    "static/js/main.96064e36.chunk.js"
+    "static/js/runtime-main.9877043b.js",
+    "static/js/2.be4d3c81.chunk.js",
+    "static/css/main.8db1de50.chunk.css",
+    "static/js/main.c1424260.chunk.js"
   ]
 }
