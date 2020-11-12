@@ -14,7 +14,7 @@ export default function Projects() {
                 <h1>PROJECTS</h1>
             </Grid>
             <Grid item xs={4} />
-            <Grid item xs={4}>
+            <Grid item xs={12} md={6} lg={4}>
                 <ProjectItem 
                 title="Java paint"/>
             </Grid>

@@ -8,6 +8,7 @@ import Avatar from '@material-ui/core/Avatar';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
+import profileImg from "../../assets/img/profile.png"
 import styles from './intro.module.css'
 
 
@@ -17,6 +18,11 @@ export default class Intro extends React.Component {
         return (
             <Grid container className={styles.gridContainer}>
                 <Grid item xs={6} style={{ backgroundColor: "#f2f2f2", position: 'relative' }}>
+                    <div>
+                        <Avatar className={styles.profileImg}>
+                            <img height='200px' width='200px' src={profileImg}/>
+                        </Avatar>
+                    </div>
                     <Paper className={styles.paper} elevation={3}>
                         <h1>HELLO THERE</h1>
 
