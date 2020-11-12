@@ -4,9 +4,51 @@ import styles from './experience.module.css';
 import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import Paper from '@material-ui/core/Paper';
-import Avatar from '@material-ui/core/Avatar';
+
+import data from '../../assets/data.json';
 
 export default function Experience() {
+    const makeList = (items) => {
+        return items.reduce((acc, item, index) => {
+            acc.push(<li>{item}</li>)
+            return acc;
+        }, [])
+    }
+    const experienceItems = data["experience"].reduce((acc, item, index) => {
+        if (index == data.experience.length - 1) {
+            acc.push(
+                <div className={styles.expRow} key={index}>
+                    <div className={styles.expContent}>
+                        <h3>{item.company}</h3>
+                        <p>{item.date}</p>
+                        <p>{item.title}</p>
+                        <p>{item.location}</p>
+                        <ul>
+                            {makeList(item.description)}
+                        </ul>
+                    </div>
+                </div>
+
+            )
+        } else {
+            acc.push(
+                <div className={styles.expRow} key={index}>
+                    <div className={styles.expContent}>
+                        <h3>{item.company}</h3>
+                        <p>{item.date}</p>
+                        <p>{item.title}</p>
+                        <p>{item.location}</p>
+                        <ul>
+                            {makeList(item.description)}
+                        </ul>
+                    </div>
+                    <Divider component="p" />
+                </div>
+
+            )
+        }
+        return acc;
+    }, [])
     return (
         <Grid id="experience" container className={styles.experienceGrid}>
             <Grid item xs={4} />
@@ -15,20 +57,8 @@ export default function Experience() {
             </Grid>
             <Grid item xs={4} />
             <Grid item xs={12}>
-                <Paper depth={3}>
-                    <div className={styles.expRow}>
-                        <div className={styles.expContent}>
-                            <h3>Slalom Build</h3>
-                            <p>June 2020 - August 2020</p>
-                            <p>Software engineer intern</p>
-                            <p>Toronto, Ontario</p>
-                            <ul>
-                                <li>Implemented modules for internal website such as search using PHP, JavaScript and Drupal</li>
-                                <li>Implemented accessibility features using Angular for employee hackathon website</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <Divider component="p" />
+                <Paper depth={3} >
+                    {experienceItems}
                 </Paper>
             </Grid>
         </Grid>

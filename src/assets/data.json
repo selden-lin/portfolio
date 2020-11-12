@@ -1,12 +1,45 @@
 {
     "experience": [
         {
-            "date": "",
-            "company": "",
-            "location": "",
-            "title": "",
+            "date": "June 2020 - Aug. 2020",
+            "company": "Slalom Build",
+            "location": "Toronto, Ontario",
+            "title": "Software Engineer Intern",
             "description": [
-
+                "Implemented modules for internal website such as search using PHP, JavaScript and Drupal",
+                "Implemented accessibility features using Angular for employee hackathon website"
+            ]
+        },
+        {
+            "date": "Sept. 2019 - Dec. 2019",
+            "company": "Mosaic Institute",
+            "location": "Toronto, Ontario",
+            "title": "Software Engineer Intern",
+            "description": [
+                "Implemented game server for diversity awareness game using Python, SocketIO and ReactJS",
+                "Created REST API using Flask and MongoDB for storing player data"
+            ]
+        },
+        {
+            "date": "May 2018 - Aug. 2019",
+            "company": "IBM",
+            "location": "Markham, Ontario",
+            "title": "Software Engineer Intern",
+            "description": [
+                "Implemented web dashboards for tracking development progress in agile sprints using AngularJS, IBMDB and ExpressJS",
+                "Automated build and testing processes using Jenkins workflows and Perl/Bash scripts reducing testing time by 50%",
+                "Developed testing tool using Java that designed complex SQL queries for black and white box, stress, unit, and use case testing on database systems",
+                "Worked with many Linux and Unix operating systems (SLES, RHEL, AIX, Ubuntu, etc.)"
+            ]
+        },
+        {
+            "date": "June 2017 - Aug. 2017",
+            "company": "Epilepsy Southwestern Ontario",
+            "location": "London, Ontario",
+            "title": "Web Developer",
+            "description": [
+                "Designed and implemented company website using JavaScript and PHP used by hundreds of epilepsy patients across Ontario at https://epilepsyswo.ca",
+                "Held weekly meetings with directors to collect new requirements"
             ]
         }
     ],
@@ -15,6 +48,7 @@
             "img": "",
             "description": "",
             "title": "",
+            "tags": [],
             "links": [
                 
             ]

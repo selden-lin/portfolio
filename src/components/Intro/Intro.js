@@ -17,10 +17,10 @@ export default class Intro extends React.Component {
 
         return (
             <Grid container className={styles.gridContainer}>
-                <Grid item xs={6} style={{ backgroundColor: "#f2f2f2", position: 'relative' }}>
+                <Grid item xs={12} md={6} style={{ backgroundColor: "#f2f2f2", position: 'relative' }}>
                     <div>
                         <Avatar className={styles.profileImg}>
-                            <img height='200px' width='200px' src={profileImg}/>
+                            <img width='200px' src={profileImg}/>
                         </Avatar>
                     </div>
                     <Paper className={styles.paper} elevation={3}>
@@ -46,7 +46,7 @@ export default class Intro extends React.Component {
                         </div>
                     </Paper>
                 </Grid>
-                <Grid item xs={6} style={{ backgroundColor: "black" }}>
+                <Grid item xs={12} md={6} style={{ backgroundColor: "black" }}>
                     <Particles
                         params={{
                             "particles": {
