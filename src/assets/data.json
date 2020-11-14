@@ -64,6 +64,15 @@
             ]
         },
         {
+            "img": "img/javaPaintGui.png",
+            "description": "Java swing paint app using MVC with options to draw, draw shapes, and save canvas states. Head over to the github for further description",
+            "title": "Java Swing Paint GUI",
+            "tags": ["java", "MVC", "OOP", "Design patterns"],
+            "links": [
+                "https://github.com/selden-lin/java-paint-gui"
+            ]
+        },
+        {
             "img": "img/reactBlogSite.png",
             "description": "A simple CRUD blog site",
             "title": "React Blog Site",
